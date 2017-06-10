@@ -1,13 +1,18 @@
 package concaro.hackernews.app.presentation.adapter;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.text.Html;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.mikepenz.fastadapter.FastAdapter;
+import com.mikepenz.fastadapter.helpers.ClickListenerHelper;
 import com.mikepenz.fastadapter.items.GenericAbstractItem;
+import com.mikepenz.fastadapter.listeners.ClickEventHook;
 
 import java.util.List;
 
@@ -77,6 +82,12 @@ public class HNStoryItem extends GenericAbstractItem<HNStory, HNStoryItem, HNSto
             viewHolder.tvTime.setText(Functions.getAbbreviatedTimeSpan(item.getTime()));
         }
         viewHolder.tvLink.setText(Functions.getDomainName(item.getUrl()));
+        if(TextUtils.isEmpty(item.getUrl())) {
+            viewHolder.imvGotoApp.setVisibility(View.GONE);
+        } else {
+            viewHolder.imvGotoApp.setVisibility(View.VISIBLE);
+        }
+        
     }
 
     @Override
@@ -109,11 +120,43 @@ public class HNStoryItem extends GenericAbstractItem<HNStory, HNStoryItem, HNSto
         protected TextView tvAuthor;
         @BindView(R.id.tvComments)
         protected TextView tvComments;
+        @BindView(R.id.imvGotoApp)
+        protected ImageView imvGotoApp;
 
         public ViewHolder(View view) {
             super(view);
             ButterKnife.bind(this, view);
         }
+    }
+
+    public interface HNStoryItemClick {
+        void onClickGotoApp(HNStoryItem item, ImageView imv);
+    }
+
+    public static class ItemClick extends ClickEventHook<HNStoryItem> {
+        HNStoryItemClick listener;
+
+        public ItemClick(HNStoryItemClick listener) {
+            this.listener = listener;
+        }
+
+        @Override
+        public void onClick(View v, int position, FastAdapter<HNStoryItem> fastAdapter, HNStoryItem item) {
+            if (listener != null) {
+                if (v.getId() == R.id.imvGotoApp) {
+                    listener.onClickGotoApp(item, (ImageView) v);
+                }
+            }
+        }
+
+        @Override
+        public List<View> onBindMany(@NonNull RecyclerView.ViewHolder viewHolder) {
+            if (viewHolder instanceof HNStoryItem.ViewHolder) {
+                return ClickListenerHelper.toList(((ViewHolder) viewHolder).imvGotoApp);
+            }
+            return super.onBindMany(viewHolder);
+        }
+
     }
 
 

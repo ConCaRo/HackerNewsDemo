@@ -775,7 +775,11 @@ public class Functions {
         }
     }
 
-
+    public static void openLink(Context context, String link) {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(link));
+        context.startActivity(intent);
+    }
 
 
     private static boolean isAppInstalled(Context context, String packageName) {

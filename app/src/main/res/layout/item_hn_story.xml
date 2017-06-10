@@ -37,7 +37,7 @@
 
 
                 <LinearLayout
-                    android:layout_width="50dp"
+                    android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
                     android:gravity="center"
@@ -75,21 +75,41 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <TextView
-                        android:id="@+id/tvTitle"
-                        style="@style/txt_normal_dark_light"
-                        android:text="Gabriel posted in Pet Lovers @ Bedok"
-                        android:textColor="@color/text_dark"
-                        android:textSize="@dimen/txt_normal_medium"
-                        android:textStyle="normal" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                    <TextView
-                        android:id="@+id/tvLink"
-                        style="@style/txt_normal_dark_light"
-                        android:text="link"
-                        android:textColor="@color/text_light"
-                        android:textSize="@dimen/txt_normal"
-                        android:textStyle="normal" />
+                        <TextView
+                            android:id="@+id/tvTitle"
+                            style="@style/txt_normal_dark_light"
+                            android:layout_width="match_parent"
+                            android:layout_toLeftOf="@+id/imvGotoApp"
+                            android:text="Gabriel posted in Pet Lover @ Bedok"
+                            android:textColor="@color/text_dark"
+                            android:textSize="@dimen/txt_normal_medium"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tvLink"
+                            style="@style/txt_normal_dark_light"
+                            android:layout_below="@+id/tvTitle"
+                            android:text="link"
+                            android:textColor="@color/text_light"
+                            android:textSize="@dimen/txt_normal"
+                            android:textStyle="normal" />
+
+                        <ImageView
+                            android:id="@+id/imvGotoApp"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="5dp"
+                            android:padding="4dp"
+                            android:visibility="visible"
+                            android:src="@drawable/ic_exit_to_app" />
+
+                    </RelativeLayout>
 
                     <RelativeLayout
                         android:layout_width="match_parent"

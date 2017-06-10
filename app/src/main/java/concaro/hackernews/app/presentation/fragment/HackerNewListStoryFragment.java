@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import com.barryzhang.temptyview.TViewUtil;
 import com.dgreenhalgh.android.simpleitemdecoration.linear.EndOffsetItemDecoration;
@@ -28,23 +29,22 @@ import java.util.List;
 import javax.inject.Inject;
 
 import butterknife.BindView;
-import io.realm.Realm;
 import concaro.hackernews.app.R;
 import concaro.hackernews.app.presentation.activity.HNListStoryActivity;
 import concaro.hackernews.app.presentation.adapter.HNStoryItem;
-import concaro.hackernews.app.presentation.fragment.*;
 import concaro.hackernews.app.presentation.internal.di.component.DaggerHackerNewListStoryComponent;
 import concaro.hackernews.app.presentation.internal.di.component.HackerNewListStoryComponent;
 import concaro.hackernews.app.presentation.model.HNStory;
 import concaro.hackernews.app.presentation.presenter.HackerNewListStoryPresenter;
 import concaro.hackernews.app.presentation.util.Functions;
 import concaro.hackernews.app.presentation.view.HackerNewListStoryView;
+import io.realm.Realm;
 
 /**
  * Created by Concaro on 12/5/2016.
  */
 
-public class HackerNewListStoryFragment extends concaro.hackernews.app.presentation.fragment.BaseFragment implements HackerNewListStoryView, SwipeRefreshLayout.OnRefreshListener {
+public class HackerNewListStoryFragment extends concaro.hackernews.app.presentation.fragment.BaseFragment implements HackerNewListStoryView, SwipeRefreshLayout.OnRefreshListener, HNStoryItem.HNStoryItemClick {
 
     private static String TAG = "HackerNewListStoryFragment";
 
@@ -199,6 +199,9 @@ public class HackerNewListStoryFragment extends concaro.hackernews.app.presentat
             }
         });
 
+        mClickListenerHelper = new ClickListenerHelper<>(mFastAdapter);
+        mFastAdapter.withItemEvent(new HNStoryItem.ItemClick(this));
+
         genericItemAdapter.setModel(presenter.getItems());
     }
 
@@ -285,5 +288,10 @@ public class HackerNewListStoryFragment extends concaro.hackernews.app.presentat
     @Override
     public void returnData(List<HNStory> data) {
         refreshAdapterList();
+    }
+
+    @Override
+    public void onClickGotoApp(HNStoryItem item, ImageView imv) {
+        Functions.openLink(getActivity(), item.getModel().getUrl());
     }
 }
