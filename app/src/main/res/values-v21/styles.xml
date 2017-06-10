@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionButtonStyle">@style/AppTheme.Widget.ActionButton</item>
+
+        <!-- set this color background again to the light dark white -->
+        <!--<item name="android:windowBackground">@color/grey_light</item>-->
+
+        <!--change the color of edt line-->
+        <!--https://medium.com/google-developers/theming-with-appcompat-1a292b754b35#.4us1ljsfk-->
+        <!--<item name="colorControlNormal">@color/gray_edt</item>-->
+        <!--<item name="colorControlActivated">@color/gray_edt</item>-->
+        <!--<item name="colorControlHighlight">@color/gray_edt</item>-->
+        <!--<item name="android:textColorHint">@color/gray_edt</item>-->
+    </style>
+
+    <style name="TranslucentDetailActivityTheme" parent="AppTheme">
+        <!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+    </style>
+
+</resources>

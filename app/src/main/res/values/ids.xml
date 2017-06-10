@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <item name="fastadapter_sample_item_id" type="id" />
+    <item name="fastadapter_sub_item_id" type="id" />
+    <item name="fastadapter_expandable_item_id" type="id" />
+    <item name="fastadapter_image_item_id" type="id" />
+    <item name="fastadapter_simple_image_item_id" type="id" />
+    <item name="fastadapter_simple_image_item_id1" type="id" />
+    <item name="fastadapter_icon_item_id" type="id" />
+    <item name="fastadapter_generic_icon_item_id" type="id" />
+    <item name="fastadapter_right_generic_icon_item_id" type="id" />
+    <item name="fastadapter_checkbox_sample_item_id" type="id" />
+    <item name="fastadapter_radiobutton_sample_item_id" type="id" />
+    <item name="fastadapter_swipable_item_id" type="id" />
+    <item name="fastadapter_letter_item_id" type="id" />
+    <item name="fastadapter_realm_sample_user_item_id" type="id" />
+
+    <!--Feed-->
+    <item name="pet_category_item_id" type="id" />
+    <item name="abstract_post_item_id" type="id" />
+
+    <item name="post_new_item_id" type="id" />
+    <item name="post_item_id" type="id" />
+
+    <item name="comment_item_id" type="id" />
+    <item name="comment_load_more_item_id" type="id" />
+
+    <item name="post_recommend_list_item_id" type="id" />
+    <item name="post_follow_list_item_id" type="id" />
+    <item name="post_recommend_follow_item_id" type="id" />
+
+    <item name="post_group_list_item_id" type="id" />
+    <item name="post_group_item_id" type="id" />
+
+    <item name="post_item_share_id" type="id" />
+
+    <!--Topic-->
+    <item name="topic_header_item_id" type="id" />
+    <item name="topic_item_id" type="id" />
+
+    <!--Topic-->
+    <item name="service_header_item_id" type="id" />
+    <item name="service_item_id" type="id" />
+    <item name="merchant_item_id" type="id" />
+
+    <!--Deal-->
+    <item name="deal_item_id" type="id" />
+    <item name="deal_detail_promotion_id" type="id" />
+    <item name="deal_detail_prize_id" type="id" />
+    <item name="deal_detail_category_highlight_id" type="id" />
+    <item name="deal_detail_highlight_id" type="id" />
+
+    <item name="notification_item_id" type="id" />
+    <item name="profile_post_item_id" type="id" />
+    <item name="profile_group_item_id" type="id" />
+    <item name="profile_event_item_id" type="id" />
+    <item name="profile_activity_item_id" type="id" />
+    <item name="profile_order_item_id" type="id" />
+    <item name="profile_coupon_item_id" type="id" />
+
+    <!--Product-->
+    <item name="product_header_item_id" type="id" />
+    <item name="product_category_item_id" type="id" />
+    <item name="product_item_id" type="id" />
+    <item name="product_all_item_id" type="id" />
+
+    <!--Ship Address-->
+    <item name="ship_address_item_id" type="id" />
+    <item name="edit_ship_address_item_id" type="id" />
+    <item name="ship_address_footer_item_id" type="id" />
+
+    <!--Delivery type-->
+    <item name="delivery_type_item_id" type="id" />
+
+    <!--Payment method-->
+    <item name="payment_method_item_id" type="id" />
+
+    <!--Summary bag-->
+    <item name="summary_bag_item_id" type="id" />
+    <item name="ticket_item_id" type="id" />
+
+    <item name="deal_ticket_item_id" type="id" />
+
+    <!--Pet-->
+    <item name="pet_allergy_item_id" type="id" />
+    <item name="pet_vacination_item_id" type="id" />
+    <item name="pet_medical_visit_item_id" type="id" />
+    <item name="pet_medication_item_id" type="id" />
+    <item name="pet_surgery_item_id" type="id" />
+    <item name="pet_medication_schedule_dose_item_id" type="id" />
+
+    <item name="pet_category_choose_item_id" type="id" />
+
+    <item name="header_button_item_id" type="id" />
+
+    <item name="ticket_detail_item_id" type="id" />
+
+    <item name="order_history_product_item_id" type="id" />
+    <item name="order_history_item_id" type="id" />
+
+    <item name="card_item_id" type="id" />
+
+    <item name="ticket_history_item_id" type="id" />
+
+    <item name="wishlist_item_id" type="id" />
+</resources>

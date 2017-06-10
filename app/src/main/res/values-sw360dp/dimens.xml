@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">25dp</dimen>
+    <dimen name="activity_vertical_margin">25dp</dimen>
+
+    <bool name="is_phone">true</bool>
+
+    <!--Button-->
+    <dimen name="width_btn">320dp</dimen>
+    <dimen name="height_btn">45dp</dimen>
+
+</resources>

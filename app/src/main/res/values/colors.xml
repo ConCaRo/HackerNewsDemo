@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/color_primary</color>
+    <color name="colorPrimaryDark">@color/color_primary</color>
+    <color name="colorAccent">@color/color_primary</color>
+    <!--#d7d7d7-->
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey">#ebebeb</color>
+    <color name="grey_light">#ebebeb</color>
+    <color name="red">#ef415a</color>
+    <color name="blue_dark">#365899</color>
+    <color name="blue_light">#0177b5</color>
+    <color name="gray_text">#777777</color>
+    <color name="gray_edt">#ee858585</color>
+    <color name="gray_text_hint">#8e858585</color>
+    <color name="white_text_hint">#b4ffffff</color>
+    <color name="instagram">#dc3462</color>
+
+    <color name="text_dark">#333</color>
+    <color name="text_dark_light">#555</color>
+    <color name="text_light">#777</color>
+    <color name="text_lighter">#999</color>
+
+    <color name="bg_gray">#ebebeb</color>
+    <color name="color_primary_light">#f8f1e4</color>
+
+    <color name="gray_bg_single_post">#f6f7f9</color>
+
+    <!--Navigation bottom colors-->
+    <color name="color_tab_1">#455C65</color>
+    <color name="color_tab_2">#00886A</color>
+    <color name="color_tab_3">#8B6B62</color>
+    <color name="color_tab_4">#6C4A42</color>
+    <color name="color_tab_5">#F63D2B</color>
+
+    <color name="color_primary">#f7b237</color>
+    <color name="colorTabNormal">#cccccc</color>
+    <color name="colorTabSelected">@color/colorPrimary</color>
+    <color name="color_primary_transparent">#80f7b237</color>
+
+    <color name="color_bg_navigation">@color/white</color>
+    <color name="color_item_selected">@color/color_primary</color>
+    <color name="color_item_inactive">#999999</color>
+
+    <color name="green">#8dc63f</color>
+
+</resources>

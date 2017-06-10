@@ -1,0 +1,7 @@
+<resources>
+
+    <dimen name="video_preview_width">160dp</dimen>
+    <dimen name="video_preview_height">90dp</dimen>
+    <dimen name="video_frame_width">2dp</dimen>
+    <bool name="landscape">true</bool>
+</resources>

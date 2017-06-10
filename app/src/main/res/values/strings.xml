@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Hacker News</string>
+    <string name="facebook_app_id">249838698769037</string>
+
+    <!-- Common -->
+    <string name="register">Register</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="login">Login</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="country">Country</string>
+    <string name="phone_number">Phone number</string>
+    <string name="no_result">NO DATA</string>
+
+    <!--Exception messages-->
+    <string name="exception_message_generic">There was an application error</string>
+    <string name="exception_message_no_connection">There is no internet connection</string>
+    <string name="connection_timeout">Connection timeout</string>
+    <string name="exception_message_user_not_found">Cannot retrieve user data. Check your internet connection</string>
+    <string name="warn_access_grant">Please grant access permissions!</string>
+    <string name="select_image">Select image</string>
+    <string name="toast_cannot_retrieve_selected_image">Cannot retrieve selected image</string>
+    <string name="toast_cannot_retrieve_cropped_image">Cannot retrieve cropped image</string>
+    <string name="toast_unexpected_error">Unexpected error</string>
+    <!--Exception messages-->
+
+
+
+</resources>
